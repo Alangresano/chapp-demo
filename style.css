@@ -1,0 +1,65 @@
+
+.portal {
+  width: 100%;
+  height: 100vh;
+  background-color: #151515;
+  background-image: url(/assets/img/trabajos/chapp/chapp_back_apaisado_1920x1080.png);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;  
+  position: relative;
+}
+
+
+.home-content-table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  text-align: center;  
+}
+
+.home-content-tablecell .row {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.home-content-tablecell img {
+  width: 40vw;
+}
+
+.home-content-table.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:
+    radial-gradient(circle at 20% 30%, #ff3cb4 0%, rgba(193, 52, 139, 0) 30%),
+    radial-gradient(circle at 70% 50%, #221fff 0%, rgba(35, 45, 150, 0) 60%),
+    radial-gradient(circle at 50% 80%, #000000 0%, rgba(0, 0, 0, 0.3) 70%);
+  background-size: 300% 300%;
+  background-position: 0% 0%, 100% 100%, 50% 50%;
+  animation: moveGradient 20s ease-in-out infinite;  
+  opacity: .8; 
+  pointer-events: none;
+}
+
+/* Animación: mueve los puntos radialmente en bucle */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%, 100% 100%, 50% 50%;
+  }
+  50% {
+    background-position: 80% 40%, 20% 60%, 60% 30%;
+  }
+  100% {
+    background-position: 0% 0%, 100% 100%, 50% 50%;
+  }
+}
