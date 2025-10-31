@@ -1,6 +1,6 @@
 
 .portal {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #151515;
   background-image: url(chapp/chapp_back_apaisado_1920x1080.png);
